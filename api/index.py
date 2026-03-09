@@ -76,11 +76,23 @@ HTML = """
     .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
     @media (max-width: 900px) { .grid { grid-template-columns:1fr; } }
     a.button { display:inline-block; margin-top:10px; color:#0b1220; background:#9bd0ff; padding:8px 12px; border-radius:8px; text-decoration:none; font-weight:600; }
+    a.meta { color:#9bd0ff; text-decoration:none; }
+    a.meta:hover { text-decoration:underline; }
+    .owner-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .owner-badge { background:#1a263b; border:1px solid #2f4567; padding:6px 10px; border-radius:999px; font-size:14px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Advanced Support Ticket Classification System</h1>
+
+    <div class="card">
+      <h2>Project Owner</h2>
+      <div class="owner-row">
+        <span class="owner-badge">GitHub: <a class="meta" href="https://github.com/sagarsr192" target="_blank" rel="noopener noreferrer">@sagarsr192</a></span>
+        <span class="owner-badge">Repository: <a class="meta" href="https://github.com/sagarsr192/Support-Ticket-Classification" target="_blank" rel="noopener noreferrer">Support-Ticket-Classification</a></span>
+      </div>
+    </div>
 
     <div class="card">
       <h2>Ticket Predictions</h2>
@@ -120,6 +132,10 @@ HTML = """
     <div class="card">
       <h2>Automated Response Suggestion</h2>
       <p>Suggested Reply: Please try restarting your router or logging in again. If the issue persists, our support team will assist you immediately.</p>
+    </div>
+
+    <div style="margin:14px 0 30px 0; opacity:0.9;">
+      Built and maintained by <a class="meta" href="https://github.com/sagarsr192" target="_blank" rel="noopener noreferrer">sagarsr192</a>.
     </div>
   </div>
 
